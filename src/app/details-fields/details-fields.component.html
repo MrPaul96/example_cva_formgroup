@@ -1,0 +1,16 @@
+<div [formGroup]="formGroup">
+  <div class="car-wrap">
+	  <div>
+		  <p class="title">This car is a {{formGroup.get('make').value}}</p>
+      <div>
+        <input type="text" formControlName="make">
+        <input type="number" formControlName="year">
+        <input type="text" formControlName="color">
+      </div>
+      <div>
+        <button style="margin-top: 3px;" (click)="enableYear()">Enable year</button>
+        <button style="margin-top: 3px;" (click)="disableYear()">Disable year</button>
+      </div>
+    </div>
+  </div>
+</div>
