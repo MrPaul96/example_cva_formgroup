@@ -24,7 +24,6 @@ export class DetailsFieldsComponent implements ControlValueAccessor, OnInit {
     @Input() formName: string;
 
     ngOnInit() {
-      console.log('hombre por aca');
       this.formGroup =  new FormGroup({
         make: new FormControl('', [Validators.required]),
         year: new FormControl('', [Validators.required]),
