@@ -31,7 +31,6 @@ export class DetailsFieldsComponent implements ControlValueAccessor, OnInit {
     });
 
       this.dadForm.addControl(this.formName, this.formGroup);
-      console.log(this.dadForm.controls);
     }
 
     onTouched: () => void = () => {};
